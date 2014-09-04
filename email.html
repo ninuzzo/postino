@@ -1,0 +1,35 @@
+  <!-- Vedi: https://developers.google.com/speed/libraries/devguide#jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <section>
+    <!-- il risultato dell'operazione sarà indicato in questo tag div -->
+     <div id="risultato"></div>
+     <form action="email.php" method="post" id="form_contatto">
+      <h1>Contattaci</h1>
+      <label class="required">
+       <span>Nome</span>
+       <input name="nome" placeholder="Nome e cognome" type="text" required autofocus>
+      </label>
+      <label class="required">
+	   <span>Email</span>
+       <input name="email" placeholder="Indirizzo di email valido" type="email" size="30" required>
+      </label>
+      <label>
+       Mandami una copia del messaggio:
+       <input type="checkbox" name="copia" checked>
+      </label>
+      <label>
+       <span>Telefono</span>
+       <input name="tel" placeholder="Eventuale contatto telefonico" type="tel">
+      </label>
+      <label class="required">
+       <span>Oggetto</span>
+       <input name="oggetto" placeholder="Breve descrizione della richiesta" type="text" size="40" required>
+      </label>
+      <label class="required">
+       <span>Messaggio</span>
+       <textarea name="messaggio" rows="5" cols="40" required></textarea>
+      </label>
+      <input type="submit" value="Manda l'email">
+     </form>
+     <script src="email.js"></script>
+  </section>

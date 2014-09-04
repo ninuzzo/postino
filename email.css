@@ -1,0 +1,25 @@
+#form_contatto label {
+	margin-bottom: .5em;
+}
+
+#form_contatto label span {
+	width: 8em;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#form_contatto label span:after {
+	content: ': ';
+	vertical-align: top;
+}
+
+#form_contatto label.required span:before {
+	content: '*';
+	font-size: .83em;
+	vertical-align: super;
+}
+
+#form_contatto label {
+	display: block;
+	clear: both;
+}

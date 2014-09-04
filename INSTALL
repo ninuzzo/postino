@@ -1,0 +1,14 @@
+Installazione script:
+
+Unix: a meno che non si decida di usare il sendmail locale (vedi costante
+      USA_SENDMAIL in email.conf.php), installare php-pear e pear-mail per
+			abilitare il supporto per SMTP. In php.ini togliere il ; davanti a
+
+      extension=openssl.so
+
+      e riavviare il server web.
+
+Windows: non c'è niente da fare, in quanto php.net/mail supporta SMTP e solo
+      questo in Windows.
+
+In entrambi i sistemi, occorre poi modificare il file di configurazione email.conf.php
